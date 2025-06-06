@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: MarketTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.03 s <<< FAILURE! - in MarketTest
+MarketTest.testHyperinflationScenario  Time elapsed: 0.022 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "java.util.Map.get(Object)" is null
+	at buyer.BuyerNeedsManager.updateNeed(BuyerNeedsManager.java:32)
+	at buyer.Buyer.considerPurchase(Buyer.java:126)
+	at buyer.Buyer.updateOffer(Buyer.java:142)
+	at seller.Seller.notifyOfferObservers(Seller.java:137)
+	at seller.Seller.restockProducts(Seller.java:113)
+	at market.Market.runTurn(Market.java:44)
+	at market.Market.runSimulation(Market.java:64)
+	at MarketTest.testHyperinflationScenario(MarketTest.java:86)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
